@@ -8,7 +8,7 @@ function onInitialization() {
     console.log("Ready.");
     $('#server-status').html("Offline");
 
-    socket = io("https://ca1.pghnetwork.net:9000");
+    socket = io("https://<domain>:9000");
 
     socket.on('connect', function() {
         $('#server-status').html("Online");
