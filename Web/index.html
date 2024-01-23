@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinkSurfer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/linksurfer.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <h1>LinkSurfer</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <h5>Server Status</h5>
+                <div class="card">
+                    <div class="card-body" id="statusBox">
+                        <p class="card-text">
+                            Server: <span id="server-status"></span><br/>
+                            Server State: <span id="server-state"></span><br/>
+                            Links Scanned: <span id="links-scanned"></span><br/>
+                            Links Queued: <span id="queue-size"></span>
+                        </p>
+                    </div>
+                </div>
+                <br/>
+                <h5>Preview</h5>
+                <div class="card">
+                    <div class="card-body" >
+                        <div id="preview-img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h5>Progress Log</h5>
+                <textarea id="progress-box" class="form-control"></textarea>
+            </div>
+        </div>
+        <hr/>
+        <div class="input-group mb-3">
+            <input type="text" id="scan-url" class="form-control" placeholder="URL to Scan" aria-label="URL to Scan" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="scan-url-submit">Scan</button>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/socket.io-4.7.2.min.js"></script>
+    <script src="js/linkSurfer.js"></script>
+  </body>
+</html>

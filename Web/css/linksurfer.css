@@ -1,0 +1,24 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.card-body {
+    background-color: #333;
+    color: #fff;
+}
+#progress-box {
+    height: 700px;
+    font-family: "Courier New";
+    overflow-y:hidden;
+    background-color: #333;
+    color: #fff;
+}
+
+#preview-img {
+    height: 480px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
